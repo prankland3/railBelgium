@@ -1,0 +1,85 @@
+/* nav Opmaak */
+.nav {
+    background-color: lightskyblue; /* Achtergrondkleur van de nav */
+    padding: 20px;
+    position: fixed; /* Maakt de nav vast aan de bovenkant van het scherm */
+    width: 100%; /* Zorgt ervoor dat de nav de volledige breedte van het scherm inneemt */
+    top: 0; /* Plaatst de nav aan de bovenkant van het scherm */
+    left: 0; /* Plaatst de nav aan de linkerkant van het scherm */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Zorgt ervoor dat de lijstitems naast elkaar worden weergegeven */
+    justify-content: space-evenly /* Verdeelt de ruimte gelijkmatig tussen de lijstitems */
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px; /* Maakt de hoeken van de lijstitems afgerond */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333; /* Kleur van de tekst op de knoppen */
+    padding: 5px;
+    background-color: lightskyblue; /* Achtergrondkleur van de knoppen */
+    border-radius: 5px; /* Maakt de hoeken van de knoppen afgerond */
+}
+
+.nav a:hover {
+    background-color: #ccc; /* Achtergrondkleur van de knoppen bij hover */
+}
+
+.nav span {
+    font-weight: bold;
+}
+
+/* Dit zorgt er voor dat de content onder de nav begint en niet achter de nav */
+
+.content {
+    margin-top: 80px;
+}
+
+/* Dit zorgt voor de lay-out van het inloggen */
+.login, .sign-up {
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input, .sign-up input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.login button, .sign-up button {
+    width: 100%;
+    padding: 5px;
+    background-color: lightskyblue;
+    border: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.login button:hover, .sign-up button:hover {
+    background-color: #ccc;
+}
+
+.login form, .sign-up form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login form label, .sign-up form label, .login form input[type="checkbox"], .sign-up form input[type="checkbox"] {
+    display: inline-flex;
+    align-items: center;
+    margin: 0px;
+}

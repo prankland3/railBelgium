@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailBelgium - Login</title>
+    <link rel="stylesheet" href="../../style/style.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <nav class="nav"> 
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign-in.html">Sign-Up</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <p>	this is the login page</p>
+    <!-- login form -->
+    <div class="login">
+        <form id="login-form" action="" method="post">
+            <label for="userName">Username/Email:</label>
+            <input type="text" id="userName" placeholder="Username or email"><br>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd"><br>
+            <input type="checkbox" name="stay_logged_in" id="stay_logged_in">
+            <label for="stay_logged_in">Remember me</label>
+            <p>If you don't have an account yet click <a href="sign-in.html">here</a></p><br>
+            <button type="submit" onclick="login()">login</button>
+
+        </form>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
